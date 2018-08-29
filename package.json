@@ -44,8 +44,5 @@
   },
   "peerDependencies": {
     "eslint": ">=4"
-  },
-  "dependencies": {
-    "source-map-support": "^0.5.9"
   }
 }

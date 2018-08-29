@@ -1,6 +1,5 @@
 #!/usr/bin/env node
 /* eslint no-console: off */
-import 'source-map-support/register';
 
 import fs from 'fs';
 import { promisify } from 'util';
