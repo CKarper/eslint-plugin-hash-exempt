@@ -23,7 +23,7 @@
     "test": "npm run mocha \"$npm_package_config_test\""
   },
   "bin": {
-    "hash-exempt": "./dist/hash-exempt.js"
+    "hash-exempt": "./dist/bin/hash-exempt.js"
   },
   "devDependencies": {
     "@babel/cli": "^7.0.0",
