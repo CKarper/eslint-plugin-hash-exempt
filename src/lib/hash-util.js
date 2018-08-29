@@ -69,7 +69,6 @@ export default class HashUtil {
 
 	updateHashDirective() {
 		const priv = privStore.get(this);
-		// console.dir(this.firstDisable, { colors: true, depth: 5 });
 		if (!this.firstDisable || this.firstDisable.loc.start.line !== 1) {
 			return this.addHashDirective();
 		}
