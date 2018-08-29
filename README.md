@@ -1,7 +1,7 @@
 # eslint-plugin-hash-exempt
 
 This plugin supports exempting a file from linting based on a hash of its contents.  This is useful
-fgor legacy code, or in cases where you may want to apply conflicting eslint standards to files from
+for legacy code, or in cases where you may want to apply conflicting eslint standards to files from
 a scaffold or generator.
 
 > You break it, you buy it.
@@ -12,7 +12,7 @@ progressively update files without forcing a wholesale refactoring.
 
 ## Installation
 
-```
+```sh
 npm install --save-dev eslint-plugin-hash-exempt
 ```
 
@@ -34,8 +34,9 @@ rules:
 ```
 
 ### Options
-* **`hashRequired`**: If this is false, only files that have a directive with hash will be verified.
-If it's true, any files with a directive at the top will require a hash.
+* **`hashRequired`**: If this is `false`, only files that have a directive with hash will be
+verified. If it's `true`, any files with a directive at the top will require a hash.  This is
+`false` by default.
 
 ## Hash Creation
 
