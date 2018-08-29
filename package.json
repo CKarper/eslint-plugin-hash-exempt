@@ -1,0 +1,51 @@
+{
+  "name": "eslint-plugin-hash-exempt",
+  "version": "0.0.1",
+  "description": "ESlint rules to require/verify file hashes for disable directives",
+  "license": "MIT",
+  "author": "Christopher Karper",
+  "repository": "ckarper/eslint-plugin-hash-exempt",
+  "main": "dist/index.js",
+  "engines": {
+    "node": ">=6"
+  },
+  "config": {
+    "prettier": "**/*.{js,json,css,jsx,mjs}",
+    "test": "test/**/*.test.js"
+  },
+  "scripts": {
+    "build": "babel src -d dist --copy-files --source-maps inline",
+    "format": "prettier --write \"$npm_package_config_prettier\"",
+    "lint": "eslint .",
+    "pretest": "npm run lint",
+    "prepublishOnly": "npm run test && npm run build",
+    "mocha": "BABEL_ENV=test nyc mocha --require @babel/register",
+    "test": "npm run mocha \"$npm_package_config_test\""
+  },
+  "bin": {
+    "hash-exempt": "./dist/hash-exempt.js"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.0.0",
+    "@babel/core": "^7.0.0",
+    "@babel/plugin-proposal-object-rest-spread": "^7.0.0",
+    "@babel/preset-env": "^7.0.0",
+    "@babel/register": "^7.0.0",
+    "babel-eslint": "^8.2.2",
+    "babel-plugin-istanbul": "^4.1.5",
+    "eslint": "^4.0.0",
+    "eslint-config-prettier": "^2.10.0",
+    "eslint-config-ua": "^3.6.1",
+    "eslint-plugin-import": "^2.14.0",
+    "mocha": "^5.2.0",
+    "nyc": "^11.4.1",
+    "nyc-config-ua": "^1.1.0",
+    "prettier": "^1.14.2"
+  },
+  "peerDependencies": {
+    "eslint": ">=4"
+  },
+  "dependencies": {
+    "source-map-support": "^0.5.9"
+  }
+}

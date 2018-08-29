@@ -1,0 +1,4 @@
+{
+	"extends": "nyc-config-ua",
+	"include": ["src/**/*.js?(x)"]
+}

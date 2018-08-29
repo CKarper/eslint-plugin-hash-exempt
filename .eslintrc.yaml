@@ -1,0 +1,5 @@
+root: true
+extends:
+  - ua
+  - prettier
+parser: babel-eslint
