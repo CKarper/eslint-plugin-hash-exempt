@@ -1,6 +1,6 @@
 {
   "name": "eslint-plugin-hash-exempt",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "ESlint rules to require/verify file hashes for disable directives",
   "license": "MIT",
   "author": "Christopher Karper",
